@@ -83,14 +83,14 @@ class FeedforwardNetwork(nn.Module):
         for i in range(layers + 1):
             if i == 0:
                 modules.extend([nn.Linear(n_features, hidden_size),
-                modules.append(g)
-                modules.append(nn.Dropout(dropout))
+                                g,
+                                nn.Dropout(dropout)])
             elif i == layers:
                 modules.append(nn.Linear(hidden_size, n_classes))
             else:
-                modules.append(nn.Linear(hidden_size, hidden_size))
-                modules.append(g)
-                modules.append(nn.Dropout(dropout))
+                modules.extend([nn.Linear(hidden_size, hidden_size),
+                                g,
+                                nn.Dropout(dropout)])
                 
         self.sequential = nn.Sequential(*modules)
 
