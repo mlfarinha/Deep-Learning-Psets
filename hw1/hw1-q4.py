@@ -82,7 +82,7 @@ class FeedforwardNetwork(nn.Module):
         
         for i in range(layers + 1):
             if i == 0:
-                modules.append(nn.Linear(n_features, hidden_size))
+                modules.extend([nn.Linear(n_features, hidden_size),
                 modules.append(g)
                 modules.append(nn.Dropout(dropout))
             elif i == layers:
