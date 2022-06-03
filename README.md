@@ -1,6 +1,6 @@
-# Deep Learning Homeworks 2021
+# Deep Learning Self-study Homeworks
 
-Homeworks from the course Deep Learning 2021:
+I decided to self-study deep learning. Here is my take on the homeworks proposed on the course Deep Learning 2021 offered by Instituto Superior Técnico, University of Lisbon, Portugal. 
 
 ## Homework 1
     
@@ -15,4 +15,7 @@ Homeworks from the course Deep Learning 2021:
 
 ## Homework 2
 
-- Classification with CNNs
+- Image classification with CNNs
+- Image captioning with encoder-decoder models
+- Attention mechanisms
+- Pytorch
